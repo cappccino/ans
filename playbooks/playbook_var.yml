@@ -1,0 +1,29 @@
+---
+- name: My playbook vars test
+  hosts: sv_all
+  become: yes
+
+
+ 
+  vars:
+    message1: Privet
+    message2: Word
+    secret   : SLKFDJLSKFD
+
+  tasks:
+
+  - name: print Secret variables
+    debug:
+      var: secret
+
+  - debug:
+      msg: "Sekretnoe slovoL:  {{ secret }}"
+
+
+  - debug:
+      msg: "vladelec dannoy rm --> {{ owner }}"
+
+  - set_fact: full_message="{{ message1 }} {{ message2 }} from {{ owner }}"
+
+  - debug:
+      var: full_message
