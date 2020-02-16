@@ -1,0 +1,16 @@
+---
+- name: test playbook variables
+  hosts: it6.nik.grancall.ru
+  become: yes
+  
+
+  vars:
+    messeage1: Privet
+    messeage2: Word
+    secret   : SUDHKDJSDS
+ 
+    tasks:
+  
+    - name: Print Secret variable
+      debug:
+        var: secret

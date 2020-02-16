@@ -1,10 +1,12 @@
 
 
 #------------------------------------------------------------------
+it6.nik.grancall.ru     ansible_user=toor   ansible_ssh_private_key_file=/home/mihail/.ssh/id_rsa
+
 [sv_all]
-sv1.nik.grancall.ru
-sv2.nik.grancall.ru
-sv3.nik.grancall.ru
+sv1.nik.grancall.ru     owner=dich1
+sv2.nik.grancall.ru     owner=dich2
+sv3.nik.grancall.ru     owner=klounada
 sv4.nik.grancall.ru
 sv5.nik.grancall.ru
 sv6.nik.grancall.ru

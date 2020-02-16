@@ -1,0 +1,11 @@
+---
+- name: test download site
+  hosts: sv_all
+  become: no
+
+  tasks:
+
+  - name: download site 
+    copy: -a "src=my_file.txt dest=/home/toor" -b --ask-become-pass
+
+
