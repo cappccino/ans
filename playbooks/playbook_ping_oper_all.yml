@@ -1,0 +1,11 @@
+---
+- name: test connection to my hosts
+  hosts: oper_all
+  become: no
+
+  tasks:
+
+  - name: ping my hosts
+    ping:
+
+
