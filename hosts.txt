@@ -4,7 +4,10 @@
 it6.nik.grancall.ru     ansible_user=toor   ansible_ssh_private_key_file=/home/mihail/.ssh/id_rsa
 #------------------------------------------------------------------
 [sv_all]
-sv[1:20].nik.grancall.ru
+sv1.nik.grancall.ru
+sv2.nik.grancall.ru
+sv3.nik.grancall.ru
+sv[4:20].nik.grancall.ru
 #--------------------------
 [oper_all]
 oper[1:310].nik.grancall.ru
@@ -29,3 +32,6 @@ trener5.nik.grancall.ru
 [trener6_all]
 trener6.nik.grancall.ru
 #-------------------------------------
+
+[amway]
+oper[35:51].nik.grancall.ru
