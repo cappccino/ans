@@ -4,11 +4,14 @@
 it6.nik.grancall.ru     ansible_user=toor   ansible_ssh_private_key_file=/home/mihail/.ssh/id_rsa
 #------------------------------------------------------------------
 [sv_all]
-sv1.nik.grancall.ru
-sv2.nik.grancall.ru
-sv3.nik.grancall.ru
+sv1.nik.grancall.ru    owner=Vasya
+sv2.nik.grancall.ru    owner=Petya
+sv3.nik.grancall.ru    owner=Nikolay
 sv[4:20].nik.grancall.ru
-#--------------------------
+#-------------------------
+[dark_hall]
+oper[294:314].nik.grancall.ru
+#-------------------------
 [oper_all]
 oper[1:310].nik.grancall.ru
 #--------------------------
