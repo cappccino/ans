@@ -6,11 +6,14 @@ it6.nik.grancall.ru     ansible_user=toor   ansible_ssh_private_key_file=/home/m
 [sv_all]
 sv1.nik.grancall.ru    owner=Vasya
 sv2.nik.grancall.ru    owner=Petya
-sv3.nik.grancall.ru    owner=Nikolay
-sv[4:20].nik.grancall.ru
+sv10.nik.grancall.ru    owner=Nikolay
+#sv[4:20].nik.grancall.ru
 #-------------------------
 [dark_hall]
 oper[294:314].nik.grancall.ru
+#---------------------------
+[rshb]
+oper[69:76].nik.grancall.ru
 #-------------------------
 [oper_all]
 oper[1:310].nik.grancall.ru
