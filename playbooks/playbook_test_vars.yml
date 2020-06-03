@@ -1,0 +1,37 @@
+---
+- name: My playbook vars test
+  hosts: sv_all
+  become: no
+
+
+
+  vars:
+    messeage1: Privet
+    messeage2: Word
+    secret   : SLKFDJLSKFD
+
+  tasks:
+
+  - name: print Secret variables
+    debug:
+      var: secret
+
+  - debug:
+      msg: "secremoe clovo: {{ secret }}"
+
+  - debug:
+      msg: "vladelec etogo servera --> {{ owner }} <--"
+
+  - set_fact: full_message="{{ messeage1 }} {{ messeage2 }} from {{ owner }}"
+
+  - debug:
+      var: full_message
+
+  - debug:
+      var: ansible_lsb
+
+  - shell: uptime
+    register: results
+
+  - debug:
+      var: results.stdout

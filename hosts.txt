@@ -1,0 +1,43 @@
+
+
+#------------------------------------------------------------------
+it6.nik.grancall.ru     ansible_user=toor   ansible_ssh_private_key_file=/home/mihail/.ssh/id_rsa
+#------------------------------------------------------------------
+[sv_all]
+sv1.nik.grancall.ru    owner=Vasya
+sv2.nik.grancall.ru    owner=Petya
+sv10.nik.grancall.ru    owner=Nikolay
+#sv[4:20].nik.grancall.ru
+#-------------------------
+[dark_hall]
+oper[294:314].nik.grancall.ru
+#---------------------------
+[rshb]
+oper[69:76].nik.grancall.ru
+#-------------------------
+[oper_all]
+oper[1:310].nik.grancall.ru
+#--------------------------
+[trener1_all]
+#media-gran - teper trener1(Windows)
+trener1pc[1:12].nik.grancall.ru
+#-----------------------------
+[trener2_all]
+trener2.nik.grancall.ru
+trener2pc[1:5].nik.grancall.ru
+#-------------------------------------
+[trener3_all]
+trener3.nik.grancall.ru
+trener3pc[1:4].nik.grancall.ru
+#-------------------------------------
+trener4.nik.grancall.ru
+#-------------------------------------
+[trener5_all]
+trener5.nik.grancall.ru
+#-------------------------------------
+[trener6_all]
+trener6.nik.grancall.ru
+#-------------------------------------
+
+[amway]
+oper[35:51].nik.grancall.ru
