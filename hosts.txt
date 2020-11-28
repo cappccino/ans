@@ -1,26 +1,36 @@
-
-
+[ip_oper]
+#192.168.242.[1:254]   ansible_user=toor   ansible_ssh_private_key_file=/home/toor/.ssh/id_rsa
+192.168.243.[1:254]   ansible_user=toor   ansible_ssh_private_key_file=/home/toor/.ssh/id_rsa
+#sv11.nik.grancall.ru ansible_user=toor   ansible_ssh_private_key_file=/home/mihail/.ssh/id_rsa
 #------------------------------------------------------------------
-it6.nik.grancall.ru     ansible_user=toor   ansible_ssh_private_key_file=/home/mihail/.ssh/id_rsa
+#it6.nik.grancall.ru     ansible_user=toor   ansible_ssh_private_key_file=/home/mihail/.ssh/id_rsa
 #------------------------------------------------------------------
+[aup_all]
+aup[2:16].nik.grancall.ru
+#------------------------------------------------
 [sv_all]
-sv1.nik.grancall.ru    owner=Vasya
-sv2.nik.grancall.ru    owner=Petya
-sv10.nik.grancall.ru    owner=Nikolay
-#sv[4:20].nik.grancall.ru
+#sv1.nik.grancall.ru    owner=Vasya
+#sv2.nik.grancall.ru    owner=Petya
+#sv10.nik.grancall.ru    owner=Nikolay
+#sv[14:15].nik.grancall.ru
+sv12.nik.grancall.ru
 #-------------------------
 [dark_hall]
 oper[294:314].nik.grancall.ru
-#---------------------------
-[rshb]
-oper[69:76].nik.grancall.ru
+#------------------------------
+[green_hall]
+oper[87:102].nik.grancall.ru
+#-------------------------------
+[blue_hall]
+oper[1:200].nik.grancall.ru
 #-------------------------
 [oper_all]
-oper[1:310].nik.grancall.ru
+oper[87:95].nik.grancall.ru
 #--------------------------
 [trener1_all]
 #media-gran - teper trener1(Windows)
-trener1pc[1:12].nik.grancall.ru
+trener1pc[1:6].nik.grancall.ru
+trener1pc[9:14].nik.grancall.ru
 #-----------------------------
 [trener2_all]
 trener2.nik.grancall.ru
@@ -38,6 +48,3 @@ trener5.nik.grancall.ru
 [trener6_all]
 trener6.nik.grancall.ru
 #-------------------------------------
-
-[amway]
-oper[35:51].nik.grancall.ru
