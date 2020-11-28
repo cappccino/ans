@@ -1,0 +1,17 @@
+---
+ - hosts: sv_all
+   become: yes
+   tasks:
+   - name: update source list    
+     apt:  update_cache=yes
+   
+   - name: upgrade all packeges
+     apt:  upgrade=dist
+
+   - name: clear recycle bin
+     command: rm -rf /home/oper/.local/share/Trash/
+
+   - name: Remove useless packages from the cache
+     apt:
+      autoclean: yes
+

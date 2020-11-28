@@ -1,0 +1,13 @@
+---
+- name: Install app
+  hosts: dark_hall
+  become: no
+
+  tasks:
+    - name: Check and print linux os family
+      debug: var=ansible_os_family
+
+  tasks:
+   - name: Install aptitude using apt
+     apt: name=aptitude state=latest update_cache=yes force_apt-get=yes
+

@@ -1,0 +1,7 @@
+---
+- hosts: sv_all
+  tasks:
+    - name: wakeup Neo...
+      wakeonlan: mac='08:60:6e:7e:83:81' broadcast=192.168.16.255 port=7
+      # wakeonlan: mac='8c:89:a5:fd:fe:92' broadcast=192.168.16.255
+      delegate_to: localhost

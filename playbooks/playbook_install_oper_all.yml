@@ -1,0 +1,10 @@
+---
+- name: install 
+  hosts: oper_all
+  become: yes
+
+
+  tasks:
+  - name: install nauphone
+    apt: name=nausoftphone state=latest
+

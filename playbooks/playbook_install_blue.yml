@@ -1,0 +1,10 @@
+---
+- name: install 
+  hosts: blue_hall
+  become: yes
+
+
+  tasks:
+  - name: install nauphone
+    apt: name=nausoftphone state=latest
+

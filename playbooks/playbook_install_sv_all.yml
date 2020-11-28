@@ -1,0 +1,10 @@
+---
+- name: install 
+  hosts: sv_all
+  become: yes
+
+
+  tasks:
+  - name: install nauphone
+    apt: name=nausoftphone state=latest
+

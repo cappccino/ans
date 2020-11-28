@@ -1,0 +1,9 @@
+---
+ - hosts: trener1_all
+   become: yes
+   tasks:
+   - name: update source list
+     apt:  update_cache=yes
+   
+   - name: upgrade all packeges
+     apt:  upgrade=dist
